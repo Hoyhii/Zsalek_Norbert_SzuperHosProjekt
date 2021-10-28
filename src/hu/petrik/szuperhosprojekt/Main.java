@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         Vasember vas = new Vasember();
         Batman bat = new Batman();
-        Szuperhos hos = new Bosszuallo(2, true) {
+        Bosszuallo busz = new Bosszuallo(2, true) {
 
             @Override
             public boolean megMentiAVilagot() {
@@ -20,7 +20,7 @@ public class Main {
             }
         };
 
-        Szuperhos hos2 = new Bosszuallo(311, true) {
+        Bosszuallo busz2 = new Bosszuallo(311, true) {
 
             @Override
             public boolean megMentiAVilagot() {
@@ -34,10 +34,10 @@ public class Main {
         };
         Kepregeny.szereplok("szuperhos.txt");
         Kepregeny.szuperhosok();
-        System.out.println("első szupererős hős"+hos);
-        System.out.println("második szupererős hős"+hos2);
-        System.out.println("hos vs hos2"+hos.legyoziE(hos2));
-        System.out.println("hos2 vs hos"+hos2.legyoziE(hos));
+        System.out.println(busz);
+        System.out.println(busz2);
+        System.out.println(busz.legyoziE(busz2));
+        System.out.println(busz2.legyoziE(busz));
         System.out.println(vas.megMentiAVilagot());
         System.out.println(bat.legyoziE(vas));
         System.out.println(vas);
